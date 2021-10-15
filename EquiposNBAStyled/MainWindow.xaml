@@ -41,9 +41,12 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
         <Style TargetType="{x:Type WrapPanel}" x:Key="StyleWP">
-            
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
-    
+        <Style TargetType="{x:Type Image}" x:Key="StyleImg">
+            <Setter Property="Width" Value="150"/>
+        </Style>
     </Window.Resources>
     
     <StackPanel>
@@ -51,25 +54,20 @@
             <StackPanel>
                 <TextBlock Style="{StaticResource StyleTBck}"
                     Text="Los Ángeles Lakers"/>
-                <WrapPanel
+                <WrapPanel Style="{StaticResource StyleWP}"
                      x:Name="Lakers"
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Center">
-                    <Image 
-                        Source="/img/9_lakers.png"
-                        Width="150"/>
-                    <Image 
-                        Source="/img/14_lakers.png"
-                        Width="150"/>
-                    <Image
-                        Source="/img/23_lakers.png"
-                        Width="150"/>
-                    <Image
-                        Source="/img/3_lakers.png"
-                        Width="150"/>
-                    <Image
-                        Source="/img/39_lakers.png"
-                        Width="150"/>
+                    <Image  Style="{StaticResource StyleImg}"
+                        Source="/img/9_lakers.png"/>
+                    <Image  Style="{StaticResource StyleImg}"
+                        Source="/img/14_lakers.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/23_lakers.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/3_lakers.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/39_lakers.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
@@ -79,25 +77,18 @@
                 <TextBlock Style="{StaticResource StyleTBck}"
                     Foreground="White"
                     Text="Miami Heat"/>
-                <WrapPanel
-                    x:Name="Heats"
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center">
-                    <Image 
-                        Source="/img/7_heat.png"
-                        Width="150"/>
-                    <Image 
-                        Source="/img/14_heat.png"
-                        Width="150"/>
-                    <Image 
-                        Source="/img/22_heat.png"
-                        Width="150"/>
-                    <Image 
-                        Source="/img/99_heat.png"
-                        Width="150"/>
-                    <Image 
-                        Source="/img/13_heat.png"
-                        Width="150"/>
+                <WrapPanel Style="{StaticResource StyleWP}"
+                    x:Name="Heats">
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/7_heat.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/14_heat.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/22_heat.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/99_heat.png"/>
+                    <Image Style="{StaticResource StyleImg}"
+                        Source="/img/13_heat.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
