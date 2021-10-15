@@ -47,6 +47,7 @@
         <Style TargetType="{x:Type Image}" x:Key="StyleImg">
             <Setter Property="Width" Value="150"/>
         </Style>
+    
     </Window.Resources>
     
     <StackPanel>
